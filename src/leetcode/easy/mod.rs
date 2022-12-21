@@ -8,4 +8,8 @@ pub mod valid_parentheses;
 
 pub mod longest_palindromic_substring;
 
+pub mod add_binary;
+pub mod length_of_last_word;
+pub mod my_sqrt;
 pub mod search_insert_position;
+pub mod summary_ranges;

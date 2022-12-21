@@ -14,7 +14,7 @@ pub fn plus_one(digits: Vec<i32>) -> Vec<i32> {
             result.push(item);
         }
     }
-    
+
     if !flag {
         result.push(1);
     }

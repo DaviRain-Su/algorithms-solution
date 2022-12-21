@@ -1,12 +1,13 @@
 pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
-    let (mut low, mut high) = (0, nums.len());
-        
-    while low < high {
+    let (mut low, mut high) = (0, nums.len() - 1);
+
+    while low <= high {
         let mid = low + (high - low) / 2; //1
         if nums[mid] == target {
             return mid as i32;
-        } else if nums[mid] > target { //2
-            high = mid; // 3
+        } else if nums[mid] > target {
+            //2
+            high = mid - 1; // 3
         } else {
             low = mid + 1; //4
         }
